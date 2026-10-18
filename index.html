@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Днюшник — напоминания о днях рождения и памятных датах</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 40px 18px 60px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px; line-height: 1.65;
+    background: #FBFAF8; color: #1E1E1E;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 30px; margin: 0 0 8px; }
+  .lead { font-size: 17px; color: #4A4A4A; margin: 0 0 30px; }
+  h2 { font-size: 20px; margin: 34px 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: rgba(0,0,0,.04); border-radius: 12px;
+    padding: 18px 20px; margin: 20px 0;
+  }
+  a { color: #B95A20; }
+  footer { margin-top: 46px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,.12); color: #6B6B6B; font-size: 14px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #14181D; color: #E6E6E6; }
+    .lead { color: #B8C0C8; }
+    .card { background: rgba(255,255,255,.06); }
+    a { color: #FFB37A; }
+    footer { border-top-color: rgba(255,255,255,.14); color: #9AA3AD; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Днюшник</h1>
+<p class="lead">Помнит о днях рождения, свадьбах и днях памяти — и напоминает заранее.</p>
+
+<h2>Что умеет</h2>
+<ul>
+  <li>Хранит события четырёх типов: день рождения, свадьба, день памяти, другое событие.</li>
+  <li>Считает, сколько дней осталось, и показывает возраст или годовщину.</li>
+  <li>Присылает уведомление заранее — за столько дней, за сколько вы укажете.</li>
+  <li>Показывает события на календаре по месяцам.</li>
+  <li>Сортирует по ближайшей дате, по имени, по фамилии и по типам событий.</li>
+  <li>Сохраняет базу в файл и загружает её обратно — можно перенести на новый телефон.</li>
+  <li>Работает без интернета и без регистрации.</li>
+</ul>
+
+<h2>Чего не делает</h2>
+<ul>
+  <li>Не требует учётной записи и не просит телефон или почту.</li>
+  <li>Не отправляет данные на серверы — они остаются на вашем телефоне.</li>
+  <li>Не показывает рекламу и не собирает статистику.</li>
+</ul>
+
+<div class="card">
+  <strong>Бесплатная версия</strong> — до 10 событий, все функции напоминаний.<br>
+  <strong>Полная версия</strong> — одна разовая покупка, событий без ограничений.
+</div>
+
+<h2>Документы</h2>
+<p>
+  <a href="privacy.html">Политика конфиденциальности</a>
+</p>
+
+<footer>
+  Приложение распространяется через магазин RuStore.<br>
+  Связь с разработчиком: <a id="contact-email" href="/cdn-cgi/l/email-protection#1672786f63657e787f7d303520222d7b777f7a386463">dnyushnik&#64;mail.ru</a>
+</footer>
+
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+/* Адрес почты собирается на месте — см. пояснение в privacy.html. */
+(function () {
+  var link = document.getElementById('contact-email');
+  if (!link) return;
+  var address = 'dnyushnik' + String.fromCharCode(64) + 'mail.ru';
+  link.href = 'mailto:' + address;
+  link.textContent = address;
+})();
+</script>
+</body>
+</html>
